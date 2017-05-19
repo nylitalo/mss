@@ -1,0 +1,62 @@
+Pages:
+HEM
+TJÄNSTER
+OM OSS
+PRISER
+FAQ
+KONTAKTA OSS
+
+
+
+HEM
+	What is needed to be presented on home screen
+	Overview of services
+		big icons and text. clicking them takes user to services page for more info. 
+	Picture slideshow 
+		with offers or just to show of buisness
+	Contact us now button
+		alt "become customer now"
+	
+TJÄNSTER
+	List of services that when clicked on expands and shows details.
+	a book now button should be available for all services that takes user to a contact form with the selected service filled out
+	in the expanded view of the service you should be able to nav to its own page with more info
+	
+OM OSS
+	a description about the company, when it started, its values and goals and where it operates
+	insurence details etc.
+	Where to find the company
+	and also how to contact
+
+PRISER
+	List the most common services prices.
+	If a service requires more details in order to give price redirect user to offert request
+	Gift certificate?
+	
+FAQ
+	Answers to questions before they are asked!
+	Customer related questions
+	Security
+	Payment
+	
+KONTAKTA OSS
+	contact form
+		First name
+		Last name
+		phone 
+		email
+		message
+		send button
+	Information abot where we are located
+	
+	
+HEADER
+	Logo
+	Menu
+	
+
+FOOTER
+	Services
+	Contact info
+	contact button
+	
