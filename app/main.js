@@ -40,7 +40,8 @@ export default StyleSheet.create({
         "marginBottom": 16,
         "marginLeft": 16,
         "verticalAlign": "top",
-        "width": 300
+        "width": 300,
+        "cursor": "pointer"
     },
     "sc-header": {
         "borderTopLeftRadius": 2,
@@ -121,10 +122,10 @@ export default StyleSheet.create({
     "header-menu": {
         "marginRight": 320,
         "textAlign": "right",
-        "fontSize": 24,
+        "fontSize": 20,
         "position": "absolute",
         "right": 0,
-        "height": 48
+        "height": 100
     },
     "header-menu ul": {
         "listStyleType": "none",
@@ -137,5 +138,13 @@ export default StyleSheet.create({
         "paddingBottom": 16,
         "paddingLeft": 16,
         "float": "left"
+    },
+    "header-menu li a": {
+        "textDecoration": "none",
+        "color": "inherit",
+        "cursor": "pointer"
+    },
+    "active": {
+        "fontWeight": "bold"
     }
 });

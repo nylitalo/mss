@@ -19,6 +19,7 @@ body {
   margin: 16px;
   vertical-align: top;
   width: 300px;
+  cursor: pointer;
 }
 
 .sc-header {
@@ -91,10 +92,10 @@ body {
 .header-menu {
   margin-right: 320px;
   text-align: right;
-  font-size: 24px;
+  font-size: 20px;
   position: absolute;
   right: 0px;
-  height: 48px;
+  height: 100px;
 }
 
 .header-menu ul {
@@ -106,4 +107,14 @@ body {
   list-style: none;
   padding: 16px;
   float: left;
+}
+
+.header-menu li a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
 }

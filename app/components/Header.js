@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 class Header extends React.Component {
   constructor () {
@@ -17,12 +18,16 @@ class Header extends React.Component {
         </div>
         <div className='header-menu'>
           <ul>
-            <li>HEM</li>
-            <li>TJÄNSTER</li>
-            <li>OM OSS</li>
-            <li>PRISER</li>
-            <li>FAQ</li>
-            <li>KONTAKTA OSS</li>
+            <li>
+              <NavLink exact activeClassName='active' to="/">
+                Hem
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName='active' to="/kontakt">
+                Kontakta oss
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
