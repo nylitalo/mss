@@ -18,11 +18,11 @@ class App extends React.Component {
           <div>
             <Header />
             <div className='main-container'>
-              <Route exact path="/" component={Home} />
-              <Route path="/tjanster" component={Services} />
-              <Route path="/om-oss" component={About} />
-              <Route path="/priser" component={Prices} />
-              <Route path="/kontakt" component={Contact} />
+              <Route exact path='/' component={Home} />
+              <Route path='/tjanster' component={Services} />
+              <Route path='/om-oss' component={About} />
+              <Route path='/priser' component={Prices} />
+              <Route path='/kontakt' component={Contact} />
             </div>
             <Footer />
           </div>
@@ -31,7 +31,6 @@ class App extends React.Component {
     )
   }
 }
-
 
 ReactDOM.render(
   <App />, document.getElementById('app')

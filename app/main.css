@@ -117,7 +117,7 @@ body {
 
 .header-menu li {
   list-style: none;
-  padding: 16px;
+  margin: 16px;
   display: inline;
 }
 
@@ -139,6 +139,7 @@ body {
   font-weight: bold;
   color: var(--accent-color-2);
 }
+
 
 .footer {
   position: fixed;

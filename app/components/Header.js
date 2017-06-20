@@ -11,27 +11,27 @@ class Header extends React.Component {
         <div className='header-menu' id='topnav'>
           <ul>
             <li>
-              <NavLink exact activeClassName='active' to="/">
+              <NavLink exact activeClassName='active' to='/'>
                 Hem
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName='active' to="/tjanster">
+              <NavLink activeClassName='active' to='/tjanster'>
                 Tjänster
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName='active' to="/om-oss">
+              <NavLink activeClassName='active' to='/om-oss'>
                 Om oss
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName='active' to="/priser">
+              <NavLink activeClassName='active' to='/priser'>
                 Priser
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName='active' to="/kontakt">
+              <NavLink activeClassName='active' to='/kontakt'>
                 Kontakta oss
               </NavLink>
             </li>
