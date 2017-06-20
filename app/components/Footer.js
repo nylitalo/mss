@@ -2,9 +2,7 @@ import React from 'react'
 
 class Footer extends React.Component {
   render () {
-    return (<div className="footer">
-      <h1>footer time!</h1>
-    </div>)
+    return (<div className='footer'></div>)
   }
 }
 
