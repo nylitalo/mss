@@ -135,9 +135,9 @@ body {
   display: none;
 }
 
-.header-menu li a.active {
+.active {
   font-weight: bold;
-  color: var(--accent-color-2);
+  color: var(--accent-color-2) !important;
 }
 
 

@@ -12,11 +12,12 @@ require('./main.css')
 
 class App extends React.Component {
   render () {
+    const links = ['Hem', 'Tjänster', 'Om oss', 'Priser', 'Kontakt']
     return (
       <div>
         <Router>
           <div>
-            <Header />
+            <Header links={links} />
             <div className='main-container'>
               <Route exact path='/' component={Home} />
               <Route path='/tjanster' component={Services} />
@@ -24,7 +25,7 @@ class App extends React.Component {
               <Route path='/priser' component={Prices} />
               <Route path='/kontakt' component={Contact} />
             </div>
-            <Footer />
+            <Footer links={links} />
           </div>
         </Router>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Menu from './Menu'
 
 class Header extends React.Component {
   render () {
@@ -8,35 +9,7 @@ class Header extends React.Component {
         <div className='header-logo'>
           <img src='./app/static/images/marinas_logo.png' alt='Marinas Städservice' />
         </div>
-        <div className='header-menu' id='topnav'>
-          <ul>
-            <li>
-              <NavLink exact activeClassName='active' to='/'>
-                Hem
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName='active' to='/tjanster'>
-                Tjänster
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName='active' to='/om-oss'>
-                Om oss
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName='active' to='/priser'>
-                Priser
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName='active' to='/kontakt'>
-                Kontakta oss
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        <Menu navList={this.props.links} />
       </div>
     )
   }
