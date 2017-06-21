@@ -3,8 +3,8 @@ import {NavLink} from 'react-router-dom'
 import slugify from 'slugify'
 
 class Menu extends React.Component {
-  render () {
-    const menuItems = this.props.navList.slice(1).map((link) => {
+  menuItems() {
+    return this.props.navList.slice(1).map((link) => {
       return (
         <li key={link}>
           <NavLink activeClassName='active' to={slugify(link)}>
@@ -13,6 +13,9 @@ class Menu extends React.Component {
         </li>
       )
     })
+  }
+
+  render () {
     return (
       <div className='header-menu'>
         <ul>
@@ -21,7 +24,7 @@ class Menu extends React.Component {
             {this.props.navList[0]}
           </NavLink>
         </li>
-          {menuItems}
+          {this.menuItems()}
         </ul>
       </div>
     )
