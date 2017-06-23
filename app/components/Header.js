@@ -9,7 +9,9 @@ class Header extends React.Component {
         <div className='header-logo'>
           <img src='./app/static/images/marinas_logo.png' alt='Marinas Städservice' />
         </div>
-        <Menu navList={this.props.links} />
+        <Menu
+          navList={this.props.links}
+        />
       </div>
     )
   }

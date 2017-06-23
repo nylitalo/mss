@@ -7,7 +7,7 @@ class Menu extends React.Component {
     return this.props.navList.slice(1).map((link) => {
       return (
         <li key={link}>
-          <NavLink activeClassName='active' to={slugify(link)}>
+          <NavLink activeClassName='active' to={'/'+slugify(link)}>
             {link}
           </NavLink>
         </li>
@@ -17,7 +17,7 @@ class Menu extends React.Component {
 
   render () {
     return (
-      <div className='header-menu'>
+      <div className='header-menu menu-horizontal'>
         <ul>
           <li>
           <NavLink  exact activeClassName='active' to='/'>
