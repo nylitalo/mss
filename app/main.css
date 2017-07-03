@@ -19,6 +19,12 @@ body {
   color: #2d2d2d;
 }
 
+.title {
+  font-size: 22px;
+  margin: 16px;
+  padding: 16px;
+}
+
 .main-container {
   width: 80%;
   margin: 0 auto;
@@ -34,6 +40,7 @@ body {
   vertical-align: top;
   width: 250px;
   cursor: pointer;
+  white-space: normal;
 }
 
 .sc-header {
@@ -165,8 +172,12 @@ body {
   font-weight: 400;
   padding: 16px;
   margin: 16px;
-  margin-left: 85%;
   background-color: var(--accent-color-3);
+  cursor: pointer;
+}
+
+.service-menu {
+  
 }
 
 .footer {
@@ -180,8 +191,16 @@ body {
 
 /*MEDIA*/
 
-@@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .header-menu {
-    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .service-cards {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: auto;
+    white-space:nowrap
   }
 }

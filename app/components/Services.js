@@ -1,8 +1,14 @@
 import React from 'react'
+import Menu from './Menu'
 
 class Services extends React.Component {
   render () {
-    return (<h1>Tjänster!</h1>)
+    const serviceList = ['Hemstädning', 'Flyttstädning', 'Kontorsstädning', 'Trappstädning', 'Snöskottning']
+    return (
+      <div>
+        <Menu navList={serviceList} cssClass='service-menu'/>
+      </div>
+    )
   }
 }
 

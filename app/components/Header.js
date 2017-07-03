@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Menu from './Menu'
+import MainMenu from './MainMenu'
 
 class Header extends React.Component {
   render () {
@@ -10,7 +10,7 @@ class Header extends React.Component {
           <div className='header-logo'>
             <img src='./app/static/images/marinas_logo.png' alt='Marinas Städservice' />
           </div>
-          <Menu
+          <MainMenu
             navList={this.props.links}
           />
         </div>

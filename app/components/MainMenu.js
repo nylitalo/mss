@@ -4,10 +4,10 @@ import slugify from 'slugify'
 
 class Menu extends React.Component {
   menuItems() {
-    return this.props.navList.map((link) => {
+    return this.props.navList.slice(1).map((link) => {
       return (
         <li key={link}>
-          <NavLink activeClassName='active' to={'/Tjanster/'+slugify(link)}>
+          <NavLink activeClassName='active' to={'/'+slugify(link)}>
             {link}
           </NavLink>
         </li>
@@ -17,8 +17,13 @@ class Menu extends React.Component {
 
   render () {
     return (
-      <div className={this.props.cssClass}>
+      <div className='header-menu menu-horizontal'>
         <ul>
+          <li>
+          <NavLink  exact activeClassName='active' to='/'>
+            {this.props.navList[0]}
+          </NavLink>
+        </li>
           {this.menuItems()}
         </ul>
       </div>
