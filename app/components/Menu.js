@@ -3,11 +3,11 @@ import {NavLink} from 'react-router-dom'
 import slugify from 'slugify'
 
 class Menu extends React.Component {
-  menuItems() {
+  menuItems () {
     return this.props.navList.map((link) => {
       return (
         <li key={link}>
-          <NavLink activeClassName='active' to={'/Tjanster/'+slugify(link)}>
+          <NavLink activeClassName='active' to={'/Tjanster/' + slugify(link)}>
             {link}
           </NavLink>
         </li>

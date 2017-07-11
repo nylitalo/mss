@@ -40,7 +40,8 @@ export default StyleSheet.create({
         "color": "#2d2d2d"
     },
     "title": {
-        "fontSize": 22,
+        "fontSize": 30,
+        "fontWeight": "bold",
         "marginTop": 16,
         "marginRight": 16,
         "marginBottom": 16,
@@ -82,7 +83,7 @@ export default StyleSheet.create({
     "sc-header h1": {
         "fontSize": 22,
         "fontStyle": "normal",
-        "fontWeight": "normal",
+        "fontWeight": "bold",
         "marginTop": 16,
         "marginRight": 16,
         "marginBottom": 24,
@@ -104,6 +105,9 @@ export default StyleSheet.create({
         "marginRight": 16,
         "marginBottom": 24,
         "marginLeft": 16
+    },
+    "sc-container a": {
+        "display": "block"
     },
     "hvr-float": {
         "boxShadow": "0 2px 4px 0 rgba(0, 0, 0, 0.2)",
@@ -158,7 +162,8 @@ export default StyleSheet.create({
         "right": 0,
         "marginLeft": "10%",
         "marginRight": "10%",
-        "fontSize": 20
+        "fontSize": 20,
+        "fontWeight": "bold"
     },
     "header-menu ul": {
         "listStyleType": "none"
@@ -185,6 +190,10 @@ export default StyleSheet.create({
     "active": {
         "fontWeight": "bold",
         "color": "var(--accent-color-2) !important"
+    },
+    "main-banner": {
+        "height": 300,
+        "overflow": "hidden"
     },
     "main-banner img": {
         "maxWidth": "100%"

@@ -20,7 +20,6 @@ class Home extends React.Component {
           <ServiceCard title='Trappstädning'
             thumbnail='./app/static/images/trappstad_card.png'
             text='En ren och fräsch trappuppgång är viktig för hyresgästen. ' />
-          <BigButton text='Fler tjänster' />
         </div>
       </div>
 
