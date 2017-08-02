@@ -1,0 +1,54 @@
+Tjänster sidan ska var uppdelad i 2 delar vertikalt.
+Del 1 på vänster sida ska ha en vertical meny för alla tjänster tillgängliga.
+Denna meny ska ladda nytt content för del 2
+
+Del 2 ska innehålla:
+  bild relaterad till tjänsten
+  titel
+  Snabbräkna på kostnad
+  Och beskrivning av tjänsten.
+
+
+komponenter som behövert byggas:
+ServiceMenu
+ServiceContent
+ServicePriceCalculator
+
+Och dessa ska ligga i sin egen component som heter
+Service
+
+Som sedan kan laddas av de olika varianterna av tjänster genom att skapa en
+component för varje tjänst.
+
+Dessa ska sedan laddas fr
+
+
+Hemstadning.js:
+<ServiceContent
+  serviceImage='img.png'
+  title='Hemstadning'
+  content='bunch of html' />
+
+ServiceContent.js:
+<img>{serviceimage}</img>
+{title}
+<ServicePriceCalculator service=''/> --Needs service to determine price
+{content}
+
+Services.js
+<div aligne left>
+  <ServiceMenu />
+</div>
+The rest is loaded on App and has it's own class with alignments
+
+
+ServicePriceCalculator.js
+Ska ha ett text field och en knapp.
+Man skriver i antalet kvadrameter och trycker enter/klikcar på knappen
+Validera att man skrivit en int.
+Beroende på tjänst så skall den returnera pris förslag beroende på pris range
+
+serivce tas in som prop från componenten.
+Kanske använda sig av en switch i en switch?
+Först en switch som kollar service.
+Sedan en som kollar om den angicna kvadratten är inom olika ranger.cd Dev

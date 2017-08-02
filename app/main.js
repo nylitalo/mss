@@ -51,12 +51,10 @@ export default StyleSheet.create({
         "paddingBottom": 16,
         "paddingLeft": 16
     },
-    "main-container": {
-        "width": "80%",
-        "marginTop": 0,
-        "marginRight": "auto",
-        "marginBottom": 0,
-        "marginLeft": "auto"
+    "container": {
+        "display": "grid",
+        "gridGap": 5,
+        "gridTemplateAreas": "header\"  \"section\"  \"footer"
     },
     "sc-container": {
         "backgroundColor": "var(--bg-color)",
@@ -222,8 +220,9 @@ export default StyleSheet.create({
         "cursor": "pointer"
     },
     "service-menu": {},
+    "service-container": {},
     "footer": {
-        "position": "relative",
+        "position": "fixed",
         "bottom": 0,
         "paddingTop": 16,
         "paddingRight": 0,
@@ -231,6 +230,13 @@ export default StyleSheet.create({
         "paddingLeft": 0,
         "marginTop": 48,
         "width": "100%",
-        "backgroundColor": "var(--accent-color-4)"
+        "backgroundColor": "var(--accent-color-4)",
+        "gridArea": "footer"
+    },
+    "header": {
+        "gridArea": "header"
+    },
+    "section": {
+        "gridArea": "section"
     }
 });

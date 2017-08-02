@@ -1,34 +1,21 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import slugify from 'slugify'
+import slug from 'slug'
 
-class Menu extends React.Component {
-  menuItems () {
-    return this.props.navList.slice(1).map((link) => {
-      return (
-        <li key={link}>
-          <NavLink activeClassName='active' to={'/' + slugify(link)}>
+const links = ['Hem', 'Tjänster', 'Om oss', 'Priser', 'Kontakt']
+
+export const MainMenu = () => (
+    <nav>
+      <NavLink exact activeClassName='active' to='/'>
+        {links[0]}
+      </NavLink>
+      {links.slice(1).map((link) => (
+        <div key={link}>
+          <NavLink activeClassName='active' to={'/' + slug(link, {lower: true})}>
             {link}
           </NavLink>
-        </li>
+        </div>
       )
-    })
-  }
-
-  render () {
-    return (
-      <div className='header-menu menu-horizontal'>
-        <ul>
-          <li>
-            <NavLink exact activeClassName='active' to='/'>
-              {this.props.navList[0]}
-            </NavLink>
-          </li>
-          {this.menuItems()}
-        </ul>
-      </div>
-    )
-  }
-}
-
-export default Menu
+    )}
+  </nav>
+)

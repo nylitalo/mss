@@ -1,3 +1,7 @@
 import React from 'react'
 
-class Flyttstadninga
+export const Flyttstadning = () => {
+  return (
+    <h1>Flyttstadning!</h1>
+  )
+}

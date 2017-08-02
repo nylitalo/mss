@@ -17,6 +17,7 @@ module.exports = {
     template: 'app/index.html'
   })],
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    contentBase: './',
   }
 }

@@ -1,24 +1,19 @@
 import React from 'react'
-import slugify from 'slugify'
+import slug from 'slug'
+import { Link } from 'react-router-dom'
 
-class ServiceCard extends React.Component {
-  render () {
-    return (
-      <a href={'/tjanster/' + slugify(this.props.title)}>
-        <div className='sc-container hvr-float'>
-          <div className='sc-header'>
-            <h1>{this.props.title}</h1>
-          </div>
-          <div className='sc-richmedia'>
-            <img src={this.props.thumbnail} alt={this.props.title} />
-          </div>
-          <div className='sc-text'>
-            <p>{this.props.text}</p>
-          </div>
-        </div>
-      </a>
-    )
-  }
-}
-
-export default ServiceCard
+export const ServiceCard = (props) => (
+  <Link to= {'/tjanster/' + slug(props.title, {lower: true})}>
+    <div className='sc-container hvr-float'>
+      <div className='sc-header'>
+        <h1>{props.title}</h1>
+      </div>
+      <div className='sc-richmedia'>
+        <img src={props.thumbnail} alt={props.title} />
+      </div>
+      <div className='sc-text'>
+        <p>{props.text}</p>
+      </div>
+    </div>
+  </Link>
+)

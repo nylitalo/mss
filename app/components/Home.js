@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceCard from './ServiceCard'
+import {ServiceCard} from './ServiceCard'
 import {BigButton} from './BigButton'
 
 class Home extends React.Component {
