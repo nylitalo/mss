@@ -1,6 +1,7 @@
 import React from 'react'
 import slug from 'slug'
 import { Link } from 'react-router-dom'
+import './servicecard.css'
 
 export const ServiceCard = (props) => (
   <Link to= {'/tjanster/' + slug(props.title, {lower: true})}>

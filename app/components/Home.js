@@ -6,8 +6,10 @@ class Home extends React.Component {
   render () {
     return (
       <div>
-        <div className='title'>Våra populära tjänster:</div>
-        <div className='service-cards'>
+        <div>
+          <h1>Våra populära tjänster </h1>
+        </div>
+        <div>
           <ServiceCard title='Hemstädning'
             thumbnail='./app/static/images/hemstad_card.png'
             text='Spara tid och öka trivseln hemma. Boka hemstädning redan idag!' />

@@ -49,6 +49,7 @@ body {
   width: 250px;
   cursor: pointer;
   white-space: normal;
+  text-align: center;
 }
 
 .sc-header {
@@ -144,9 +145,6 @@ body {
 .header-menu li {
   list-style: none;
   margin: 16px;
-}
-
-.menu-horizontal li {
   display: inline;
 }
 
@@ -176,31 +174,6 @@ body {
 
 .main-banner img {
   max-width: 100%;
-
-}
-
-.service-cards {
-  width: auto;
-  text-align: center;
-  float: none;
-  margin: 0 auto;
-}
-
-.big-button {
-  font-size: 20px;
-  font-weight: 400;
-  padding: 16px;
-  margin: 16px;
-  background-color: var(--accent-color-3);
-  cursor: pointer;
-}
-
-.service-menu {
-
-}
-
-.service-container {
-
 }
 
 .footer {
@@ -210,38 +183,4 @@ body {
   margin-top: 48px;
   width: 100%;
   background-color: var(--accent-color-4);
-}
-
-/*MEDIA*/
-
-
-
-@media screen and (max-width: 414px) {
-  .service-cards {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    height: auto;
-    white-space:nowrap
-  }
-}
-
-@media (min-width: 700px) {
-  .container {
-    grid-template-areas:
-    "header header header"
-    "section section section"
-    "footer footer footer";
-  }
-}
-
-header {
-  grid-area: header;
-}
-
-section {
-  grid-area: section;
-}
-
-footer {
-  grid-area: footer;
 }
