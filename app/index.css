@@ -1,0 +1,41 @@
+:root {
+  --main-color: #5699D2;
+  --accent-color: #DFDA50;
+  --accent-color-2: #DF4B38;
+  --accent-color-3: #54E980;
+  --accent-color-4: #AD54E9;
+  --bg-color: #f4f3ee;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #2d2d2d;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "section"
+    "footer";
+
+}
+
+header {
+  grid-area: header;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+}

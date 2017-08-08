@@ -5,7 +5,7 @@ import slug from 'slug'
 const links = ['Hem', 'Tjänster', 'Om oss', 'Priser', 'Kontakt']
 
 export const MainMenu = () => (
-    <nav className='header-menu'>
+    <nav>
       <ul>
         <li>
           <NavLink exact activeClassName='active' to='/'>

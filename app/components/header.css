@@ -1,0 +1,21 @@
+/*Header.js css*/
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "header-logo main-menu"
+    "main-banner main-banner";
+}
+
+.header-logo {
+  grid-area: header-logo;
+}
+/*This nav belongs to MainMenu.js - it's in here because grid*/
+nav {
+  grid-area: main-menu;
+}
+
+.main-banner {
+  grid-area: main-banner;
+}

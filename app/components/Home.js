@@ -5,7 +5,7 @@ import {BigButton} from './BigButton'
 class Home extends React.Component {
   render () {
     return (
-      <div>
+      <section>
         <div>
           <h1>Våra populära tjänster </h1>
         </div>
@@ -23,7 +23,7 @@ class Home extends React.Component {
             thumbnail='./app/static/images/trappstad_card.png'
             text='En ren och fräsch trappuppgång är viktig för hyresgästen. ' />
         </div>
-      </div>
+      </section>
 
     )
   }
