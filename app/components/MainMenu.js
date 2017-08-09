@@ -1,6 +1,7 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import slug from 'slug'
+import './mainmenu.css'
 
 const links = ['Hem', 'Tjänster', 'Om oss', 'Priser', 'Kontakt']
 

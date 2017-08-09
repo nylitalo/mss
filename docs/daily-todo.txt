@@ -1,0 +1,10 @@
+*Create mobile menu for MainMenu
+
+*Fix MainBanner Size on small and
+big screens
+
+*Fix service card alignment on small
+and big screens
+
+*Fix Footer. Add menu and contact info on
+it
