@@ -18,6 +18,7 @@ html, body {
 }
 
 body {
+  min-height: 100%;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   color: #2d2d2d;
@@ -25,6 +26,7 @@ body {
 
 .container {
   display: grid;
+  grid-template-rows: 1fr 1fr auto;
   grid-template-areas:
     "header"
     "section"
@@ -40,12 +42,12 @@ section {
   grid-area: section;
 }
 
+
 footer {
   grid-area: footer;
-  position: fixed;
-  bottom: 0;
+  grid-row-start: 3;
+  grid-row-end: 4;
   padding: 16px 0px 16px 0px;
   margin-top: 48px;
-  width: 100%;
   background-color: var(--accent-color-4);
 }

@@ -1,9 +1,9 @@
-*Create mobile menu for MainMenu
+*Create mobile menu for MainMenu      -check
 
-*Fix MainBanner Size on small and
+*Fix MainBanner Size on small and     -check
 big screens
 
-*Fix service card alignment on small
+*Fix service card alignment on small   -check
 and big screens
 
 *Fix Footer. Add menu and contact info on
