@@ -1,0 +1,21 @@
+.service-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "menu service-content";
+}
+
+.service-menu-container {
+  grid-area: menu;
+}
+
+.service-content {
+  grid-area: service-content;
+}
+
+@media (min-width: 1270px) {
+  .service-container {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}

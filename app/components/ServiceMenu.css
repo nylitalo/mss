@@ -1,3 +1,19 @@
-.test {
-  font-size: 50px;
+.service-menu {
+  font-size: 22px;
+  text-align: center;
+  color: #5699D2;
+  padding: 16px;
+}
+
+.service-link {
+  text-align: left;
+  width: 200px;
+  background-color: #f4f3ee;
+  padding: 16px;
+  margin: 4px;
+}
+
+.service-link a {
+  text-decoration: none;
+  color: inherit;
 }

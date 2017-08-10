@@ -1,10 +1,3 @@
-*Create mobile menu for MainMenu      -check
+*Create grids for Services page.
 
-*Fix MainBanner Size on small and     -check
-big screens
-
-*Fix service card alignment on small   -check
-and big screens
-
-*Fix Footer. Add menu and contact info on
-it
+*CSS for ServiceMenu and ServiceContent

@@ -1,4 +1,8 @@
 
+a {
+  color: inherit;
+}
+
 .sc-container {
   background-color: var(--bg-color);
   border-radius: 2px;

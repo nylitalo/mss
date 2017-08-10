@@ -4,7 +4,7 @@ import {MainMenu} from './MainMenu'
 export const Footer = () => (
   <footer>
     <div>
-      <MainMenu />
+      Footer
     </div>
   </footer>
 )
