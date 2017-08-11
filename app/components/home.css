@@ -1,6 +1,10 @@
 .home-intro-container {
-  background-color: #5699D2;
-  padding-bottom: 16px;
+  background-color: var(--bg-color);
+  border-radius: 2px;
+  border: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-style: solid;
+  margin: 16px;
 }
 
 p {
@@ -8,7 +12,7 @@ p {
   padding: 0 16px 0 16px;
 }
 
-.citat {
+.quote {
   font-style: italic;
   font-size: 34px;
   font-weight: lighter;
@@ -39,5 +43,11 @@ p {
   .home-container {
     padding-left: 300px;
     padding-right: 300px;
+  }
+
+
+  .home-intro-container {
+    width: 600px;
+    margin: 16px auto;
   }
 }

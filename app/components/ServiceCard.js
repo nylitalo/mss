@@ -5,7 +5,7 @@ import './servicecard.css'
 
 export const ServiceCard = (props) => (
   <Link to= {'/tjanster/' + slug(props.title, {lower: true})}>
-    <div className='sc-container hvr-float'>
+    <div className='sc-container hvr hvr-float'>
       <div className='sc-header'>
         <h1>{props.title}</h1>
       </div>

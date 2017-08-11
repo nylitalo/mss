@@ -6,15 +6,15 @@ import './home.css'
 export const Home = () => (
   <section>
     <div className='home-container'>
-      <div className='home-intro-container'>
-        <div className='citat'>
+      <div className='home-intro-container hvr'>
+        <div className='quote'>
           "Ett rent hem är ren lycka."
         </div>
         <div>
-          <p>Vi är ett lite mer personligt, serviceinriktat företag, som förenklar din vardag när tiden inte räcker till.</p>
-          <p>Idag är vi 6 anställda som underlättar vardagen för över 100 kontor och hushåll, mestadels i norrort.</p>
-          <p>Vårt motto är att hålla en god kundrelation och hög kvalitét på det vi utför. </p>
-          <p>Med ett gott samarbete mellan er och mig så kan det inte annat än bli bra.</p>
+          <p>Vi är ett lite mer personligt, serviceinriktat företag, som förenklar din vardag när tiden inte räcker till.<br />
+          Idag är vi 6 anställda som underlättar vardagen för över 100 kontor och hushåll, mestadels i norrort.<br />
+          Vårt motto är att hålla en god kundrelation och hög kvalitét på det vi utför.<br />
+          Med ett gott samarbete mellan er och mig så kan det inte annat än bli bra.</p>
         </div>
       </div>
       <div className='title'>

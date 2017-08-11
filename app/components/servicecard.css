@@ -53,8 +53,11 @@ a {
   display: block;
 }
 
-.hvr-float {
+.hvr {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hvr-float {
   transition: box-shadow 0.1s ease-out;
   display: inline-block;
   vertical-align: middle;
