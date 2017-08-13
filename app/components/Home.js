@@ -1,6 +1,5 @@
 import React from 'react'
 import {ServiceCard} from './ServiceCard'
-import {BigButton} from './BigButton'
 import './home.css'
 
 export const Home = () => (

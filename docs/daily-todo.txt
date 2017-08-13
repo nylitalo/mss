@@ -1,3 +1,9 @@
-*Create grids for Services page.
+*CSS for servicecontent
+  - Separator between menu and content in the form of a vertical line
+  - Add relevant content image
 
-*CSS for ServiceMenu and ServiceContent
+*Default service when you arrive on /tjanster
+
+*Build ServicePriceCalculator
+
+*Create placeholder 'Book now' button for services

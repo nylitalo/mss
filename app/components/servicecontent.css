@@ -1,0 +1,34 @@
+.service-content-container {
+  display: grid;
+  grid-template-rows: 256px 100px 22px 1fr;
+  grid-gap: 16px;
+  grid-template-areas:
+    "service-image"
+    "service-calculator"
+    "service-title"
+    "service-info";
+}
+
+.service-title {
+  grid-area: service-title;
+  font-size: 22px;
+  margin: 16px;
+}
+
+.service-image {
+  grid-area: service-image;
+  margin: 16px;
+  height: 256px;
+  overflow: hidden;
+}
+
+.service-info {
+  grid-area: service-info;
+  margin: 16px;
+  width: auto;
+}
+
+.service-calculator {
+  grid-area: service-calculator;
+  margin: 16px;
+}
