@@ -4,11 +4,8 @@ import {ServiceContent} from '../ServiceContent'
 export const Hemstadning = () => {
   return (
     <ServiceContent
-      image='../app/static/images/hemstad_banner.png'
+      image='hemstad_banner.png'
       title='Hemstädning'
-      content={["Tänk att komma till ett nystädat hem, varje vecka. Snart märker du hur mycket tid du sparar och trivseln hemma ökar.",<br />,
-      "Har man väl provat vill man inte vara utan det. Städningen görs givetvis efter dina önskemål.",<br />,
-      "Vi kan även hjälpa till med fönsterputs, tvättning och strykning. Hemstädning kan göras en gång i veckan, varannan vecka, eller en gång i månaden, och givetvis engångsstädning om så önskas.",<br />,
-      "Tveka inte att ta kontakt, 070-998 04 49 så kommer vi och presenterar oss och går igenom pris och vad som skall göras."]} />
+      content={["The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",<br/>,<br/>,"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends."]} />
 )
 }

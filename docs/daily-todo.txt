@@ -1,6 +1,5 @@
 *CSS for servicecontent
   - Separator between menu and content in the form of a vertical line
-  - Add relevant content image
 
 *Default service when you arrive on /tjanster
 

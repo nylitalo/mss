@@ -1,12 +1,13 @@
 .service-content-container {
   display: grid;
-  grid-template-rows: 256px 100px 22px 1fr;
+  grid-template-rows: 256px 100px 22px 1fr 50px;
   grid-gap: 16px;
   grid-template-areas:
     "service-image"
     "service-calculator"
     "service-title"
-    "service-info";
+    "service-info"
+    "booking-button";
 }
 
 .service-title {
@@ -20,6 +21,12 @@
   margin: 16px;
   height: 256px;
   overflow: hidden;
+  text-align: center;
+}
+
+.service-image img {
+  display: block;
+  margin: 0 auto;
 }
 
 .service-info {
@@ -31,4 +38,20 @@
 .service-calculator {
   grid-area: service-calculator;
   margin: 16px;
+  text-align: center;
+}
+
+.booking-button {
+  grid-area: booking-button;
+  text-align: center;
+  padding: 16px;
+}
+
+.booking-button button[type=button] {
+    background-color: var(--accent-color-3);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 16px 8px 16px;
+    font-size: 22px;
 }

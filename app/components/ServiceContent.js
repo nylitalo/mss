@@ -1,5 +1,5 @@
 import React from 'react'
-import {ServicePriceCalculator} from './ServicePriceCalculator'
+import ServicePriceCalculator from './ServicePriceCalculator'
 import { ServiceMenu } from './ServiceMenu'
 import './servicecontent.css'
 
@@ -7,7 +7,7 @@ export const ServiceContent = (props) => {
   return (
     <div className='service-content-container'>
       <div className='service-image'>
-        <img src={props.image} alt={props.title} />
+        <img src={'../app/static/images/' + props.image} alt={props.title} />
       </div>
       <div className='service-title'>
         {props.title}
@@ -17,6 +17,9 @@ export const ServiceContent = (props) => {
       </div>
       <div className='service-info'>
         {props.content}
+      </div>
+      <div className='booking-button'>
+        <button type='button'>Boka nu</button>
       </div>
     </div>
   )

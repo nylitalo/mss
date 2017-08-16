@@ -1,0 +1,26 @@
+.spc-container {
+  background-color: var(--accent-color-2);
+  padding: 12px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.spc-container input {
+  padding: 4px;
+  margin: 4px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.spc-container input[type=submit] {
+    background-color: var(--accent-color-3);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.spc-container p {
+  padding: 0px;
+  margin: 0;
+  margin-bottom: 4px;
+}
