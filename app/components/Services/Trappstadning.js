@@ -4,6 +4,7 @@ import {ServiceContent} from '../ServiceContent'
 export const Trappstadning = () => {
   return (
     <ServiceContent
+      spc={false}
       image='trappstadning_banner.png'
       title='Trappstädning'
       content={[

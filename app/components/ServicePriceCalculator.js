@@ -48,7 +48,7 @@ class ServicePriceCalculator extends React.Component {
   render() {
     return (
       <div className='spc-container hvr'>
-        <p>Beräkna ungefär pris baserat på din yta</p>
+        <p>Beräkna ungefär pris baserat på din yta: {this.props.service}</p>
         <form onSubmit={this.handleSubmit}>
           Yta i kvm:
           <input type='number' name='area' onChange={this.handleChange}/>

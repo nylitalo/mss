@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route, Redirect } from 'react-router-dom'
 import {Home} from './components/Home'
 import {Contact} from './components/Contact'
 import About from './components/About'
@@ -21,6 +21,9 @@ class App extends React.Component {
           <Route path='/om-oss' component={About} />
           <Route path='/priser' component={Prices} />
           <Route path='/kontakt' component={Contact} />
+          <Route path='/tjanster' render={() => (
+            <Redirect to='/tjanster/hemstadning' />
+          )} />
           <Footer />
         </div>
       </Router>

@@ -1,8 +1,8 @@
 *CSS for servicecontent
   - Separator between menu and content in the form of a vertical line
 
-*Default service when you arrive on /tjanster
+*Make Book now button work. It should go to Contact page and have the service alreay selected in the contact form.
 
-*Build ServicePriceCalculator
+*Contact form mockup
 
-*Create placeholder 'Book now' button for services
+*ServicePriceCalculator should check the selected service in order to determine price intervals.
