@@ -1,6 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { Router, Route, Redirect, browserHistory } from 'react-router'
+import { HashRouter as Router, Route, Redirect } from 'react-router-dom'
 import {Home} from './components/Home'
 import {Contact} from './components/Contact'
 import About from './components/About'
@@ -13,7 +12,7 @@ import './index.css'
 class App extends React.Component {
   render () {
     return (
-      <Router history={browserHistory}>
+      <Router>
         <div className='container'>
           <Header />
           <Route exact path='/' component={Home} />
@@ -31,6 +30,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <App />, document.getElementById('app')
-)
+export default App
