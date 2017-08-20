@@ -3,6 +3,9 @@
 
 *Make Book now button work. It should go to Contact page and have the service alreay selected in the contact form.
 
-*Contact form mockup
-
 *ServicePriceCalculator should check the selected service in order to determine price intervals.
+
+*Contact form should receive the service it comes from and the area used in the
+price calculator so that its already filled out for customer.
+
+*ADD REDUX!!!
