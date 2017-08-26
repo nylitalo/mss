@@ -1,8 +1,8 @@
-import updatePrice from './updatePrice'
 import { combineReducers } from 'redux'
+import { area } from './areaReducer'
+import { service } from './serviceReducer'
 
-const rootReducer = combineReducers({
-  updatePrice
+export default combineReducers({
+  area,
+  service
 })
-
-export default rootReducer

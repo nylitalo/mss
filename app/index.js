@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, Redirect, browserHistory } from 'react-router'
+import { HashRouter as Router, Route, Redirect } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './store'
+
 import {Home} from './components/Home'
-import {Contact} from './components/Contact'
+import Contact from './components/Contact'
 import About from './components/About'
 import {Services} from './components/Services'
 import Prices from './components/Prices'
@@ -11,26 +14,31 @@ import {Footer} from './components/Footer'
 import './index.css'
 
 class App extends React.Component {
+  constructor() {
+    super()
+  }
   render () {
     return (
-      <Router history={browserHistory}>
-        <div className='container'>
-          <Header />
-          <Route exact path='/' component={Home} />
-          <Route path='/tjanster' component={Services} />
-          <Route path='/om-oss' component={About} />
-          <Route path='/priser' component={Prices} />
-          <Route path='/kontakt' component={Contact} />
-          <Route path='/tjanster' render={() => (
-            <Redirect to='/tjanster/hemstadning' />
-          )} />
-          <Footer />
-        </div>
-      </Router>
+        <Router >
+          <div className='container'>
+            <Header />
+            <Route exact path='/' component={Home} />
+            <Route path='/tjanster' component={Services} />
+            <Route path='/om-oss' component={About} />
+            <Route path='/priser' component={Prices} />
+            <Route path='/kontakt' component={Contact} />
+            <Route path='/tjanster' render={() => (
+              <Redirect to='/tjanster/hemstadning' />
+            )} />
+            <Footer />
+          </div>
+        </Router>
     )
   }
 }
 
 ReactDOM.render(
-  <App />, document.getElementById('app')
+  <Provider store={store}>
+    <App />
+  </Provider>, document.getElementById('app')
 )

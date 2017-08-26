@@ -11,6 +11,15 @@ module.exports = {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
       { test: /\.(css)$/, use: [ 'style-loader', 'css-loader' ]}
+    ],
+    loaders: [
+      {
+        loader: 'babel-loader',
+        query: {
+          presets: ['latest', 'react', 'stage-0'],
+          plugins: ['transform-decorators-legacy']
+        }
+      }
     ]
   },
   plugins: [new HtmlWebpackPlugin({

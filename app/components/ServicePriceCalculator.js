@@ -1,17 +1,21 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { updateArea } from '../actions/updateAreaAction'
+
 import './servicepricecalculator.css'
 
+@connect((store) => {
+  return {
+    area: store.area.area,
+  }
+})
 class ServicePriceCalculator extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      price: 0
-    }
-
+  constructor(){
+    super()
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    let customerPrice = 0
   }
-
   areaPrice(area) {
     const basePrice = 100
     let areaPrice = 0
@@ -37,22 +41,20 @@ class ServicePriceCalculator extends React.Component {
   }
 
   handleChange(event) {
-    this.setState(
-      {
-        price: this.areaPrice(event.target.value)
-      }
-    )
+    this.props.dispatch(updateArea(event.target.value))
+    this.customerPrice = this.areaPrice(event.target.value)
   }
 
 
   render() {
+    console.log(this.props);
     return (
       <div className='spc-container hvr'>
-        <p>Beräkna ungefär pris baserat på din yta: {this.props.service}</p>
+        <p>Beräkna ungefär pris baserat på din yta:</p>
         <form onSubmit={this.handleSubmit}>
           Yta i kvm:
           <input type='number' name='area' onChange={this.handleChange}/>
-          <input type='textbox' name='output' value={this.state.price} />
+          <input type='textbox' value={this.customerPrice} />
         </form>
       </div>
     )

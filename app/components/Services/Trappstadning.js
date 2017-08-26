@@ -1,5 +1,5 @@
 import React from 'react'
-import {ServiceContent} from '../ServiceContent'
+import ServiceContent from '../ServiceContent'
 
 export const Trappstadning = () => {
   return (
