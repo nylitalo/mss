@@ -27,7 +27,7 @@ class App extends React.Component {
             <Route path='/om-oss' component={About} />
             <Route path='/priser' component={Prices} />
             <Route path='/kontakt' component={Contact} />
-            <Route path='/tjanster' render={() => (
+            <Route exact path='/tjanster' render={() => (
               <Redirect to='/tjanster/hemstadning' />
             )} />
             <Footer />
