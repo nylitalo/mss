@@ -26,36 +26,47 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Kontakta oss</h1>
-        <form>
-          <p>Namn: </p>
-          <input type='text' name='name' placeholder='För och efternamn' />
-          <p>Mail: </p>
-          <input type='mail' name='email' placeholder='ex. john@internet.com' />
-          <p>Telefonnummer: </p>
-          <input type='number' name='phone' placeholder='ex. +4673123456789' />
-          <p>Area: </p>
-          <input type='number' id='area' value={this.props.area} onChange={this.handleChange}/>
-          <p>Tjänst: </p>
-          <select name='service'>
-            {services.map((service) => {
-              const slugService = slug(service, {lower: true})
-              if (service === this.props.service) {
-                return <option
-                  key={slugService}
-                  value={slugService}
-                  selected={service} >{service}</option>
-              }
-              else {
-                return <option
-                  key={slugService}
-                  value={slugService}>{service}</option>
-              }
-            })}
-          </select>
-        </form>
-      </div>
+      <section>
+        <div className='contact-container'>
+          <div className='form-content'>
+            <form>
+              <h1>Kontakta Oss</h1>
+              <label for='flname'>För och Efternamn: </label>
+              <input id='flname' type='text' name='name' placeholder='För och efternamn' />
+              <label for='mail'>Mail: </label>
+              <input id='mail' type='mail' name='email' placeholder='ex. john@internet.com' />
+              <label for='phone'>Telefonnummer: </label>
+              <input id='phone' type='number' name='phone' placeholder='ex. +4673123456789' />
+              <label for='area'>Area: </label>
+              <input type='number' id='area' value={this.props.area} onChange={this.handleChange}/>
+              <label for='services'>Tjänst: </label>
+              <select id='services' name='service'>
+                {services.map((service) => {
+                  const slugService = slug(service, {lower: true})
+                  if (service === this.props.service) {
+                    return <option
+                      key={slugService}
+                      value={slugService}
+                      selected={service} >{service}</option>
+                  }
+                  else {
+                    return <option
+                      key={slugService}
+                      value={slugService}>{service}</option>
+                  }
+                })}
+              </select>
+              <label for='messages'>Meddelande:</label>
+              <textarea id='messages' name='messages' placeholder='Meddelande'></textarea>
+              <input type='submit' value='Skicka' />
+            </form>
+          </div>
+          <div className='location-content'>
+            <h1>Add map on this side</h1>
+            <p>Add address below</p>
+          </div>
+        </div>
+      </section>
     )
   }
 }
