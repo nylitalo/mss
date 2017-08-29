@@ -2,6 +2,7 @@ import React from 'react'
 import slug from 'slug'
 import { connect } from 'react-redux'
 import { updateArea } from '../actions/updateAreaAction'
+import Map from './Map'
 import './contact.css'
 
 const services = ['Hemstädning', 'Flyttstädning', 'Kontorsstädning', 'Trappstädning', 'Snöskottning']
@@ -16,7 +17,6 @@ const services = ['Hemstädning', 'Flyttstädning', 'Kontorsstädning', 'Trappst
 class Contact extends React.Component {
   constructor() {
     super()
-
     this.handleChange = this.handleChange.bind(this)
   }
 
@@ -31,15 +31,15 @@ class Contact extends React.Component {
           <div className='form-content'>
             <form>
               <h1>Kontakta Oss</h1>
-              <label for='flname'>För och Efternamn: </label>
+              <label htmlFor='flname'>För och Efternamn: </label>
               <input id='flname' type='text' name='name' placeholder='För och efternamn' />
-              <label for='mail'>Mail: </label>
+              <label htmlFor='mail'>Mail: </label>
               <input id='mail' type='mail' name='email' placeholder='ex. john@internet.com' />
-              <label for='phone'>Telefonnummer: </label>
+              <label htmlFor='phone'>Telefonnummer: </label>
               <input id='phone' type='number' name='phone' placeholder='ex. +4673123456789' />
-              <label for='area'>Area: </label>
+              <label htmlFor='area'>Area: </label>
               <input type='number' id='area' value={this.props.area} onChange={this.handleChange}/>
-              <label for='services'>Tjänst: </label>
+              <label htmlFor='services'>Tjänst: </label>
               <select id='services' name='service'>
                 {services.map((service) => {
                   const slugService = slug(service, {lower: true})
@@ -56,12 +56,13 @@ class Contact extends React.Component {
                   }
                 })}
               </select>
-              <label for='messages'>Meddelande:</label>
+              <label htmlFor='messages'>Meddelande:</label>
               <textarea id='messages' name='messages' placeholder='Meddelande'></textarea>
               <input type='submit' value='Skicka' />
             </form>
           </div>
           <div className='location-content'>
+            <Map initialPosition={{lat: 59.523424, lng: 17.894824}}/>
             <h1>Add map on this side</h1>
             <p>Add address below</p>
           </div>
