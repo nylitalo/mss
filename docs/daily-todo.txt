@@ -4,11 +4,11 @@
 *ServicePriceCalculator should check the selected service in order to determine price intervals.
 
 *contact
+  ***MOVE FORM TO ITS OWN COMPONENT***
   *add address field
   *add css
   *add form validation
   *create mail generator for form.
   *when the form is generated in to email it should create a url for gmaps and attach it so company can find location quick
 
-  *Add google map of office on right side.
-  *add contact info below it
+  *add contact info below map.
