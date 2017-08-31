@@ -16,7 +16,6 @@ class MailForm extends React.Component {
   constructor() {
     super()
     this.handleChange = this.handleChange.bind(this)
-
   }
 
   handleChange(event) {
