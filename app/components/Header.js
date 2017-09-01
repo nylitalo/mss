@@ -11,7 +11,7 @@ export const Header = () => (
       <MainMenu />
     </div>
     <div className='main-banner'>
-      <img src='/app/static/images/mainImage.png' />
+      <img src='./app/static/images/mainImage.png' />
     </div>
   </header>
 )
