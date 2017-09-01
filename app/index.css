@@ -1,9 +1,9 @@
 :root {
   --main-color: #5699D2;
-  --accent-color-1: #DFDA50;
-  --accent-color-2: #DF4B38;
-  --accent-color-3: #54E980;
-  --accent-color-4: #AD54E9;
+  --accent-color-1: #223C52; /*selections, should be opposite of main-color*/
+  --accent-color-2: #9ABCD9; /*cards*/
+  --accent-color-3: #41749F; /*tools*/
+  --accent-color-4: #3B4752; /*Footer mainly*/
   --bg-color: #f4f3ee;
 }
 

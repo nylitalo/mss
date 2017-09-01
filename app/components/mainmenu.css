@@ -40,5 +40,5 @@ nav li a {
 
 .active {
   font-weight: bold;
-  color: var(--accent-color-2) !important;
+  color: var(--accent-color-1) !important;
 }

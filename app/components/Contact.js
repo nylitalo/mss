@@ -29,7 +29,7 @@ class Contact extends React.Component {
     return (
       <section>
         <div className='contact-container'>
-          <div className='form-content'>
+          <div className='form-content hvr'>
             <MailForm />
           </div>
           <div className='location-content'>
