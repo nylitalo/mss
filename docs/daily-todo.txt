@@ -1,14 +1,34 @@
-*CSS for servicecontent
-  - Separator between menu and content in the form of a vertical line
+*API
+  hide the google map api key in a conf file and import.
+
+*Redux
+  Add link arrays to store and fetch them from there
 
 *ServicePriceCalculator should check the selected service in order to determine price intervals.
 
 *contact
-  ***MOVE FORM TO ITS OWN COMPONENT***
-  *add address field
-  *add css
-  *add form validation
-  *create mail generator for form.
-  *when the form is generated in to email it should create a url for gmaps and attach it so company can find location quick
+  *add address field?
+  *fix css
+  *add form validation!
+  *create php script to send mail.
+    maybe:
+      *when the form is generated in to email it should create a url
+      for gmaps and attach it so company can find location quick
 
   *add contact info below map.
+
+Services
+  *Mobile first!
+  *Fix css grid and alignment
+  *Redesign 'Boka nu' button
+  *Redesign ServicePriceCalculator (Make it a bit smaller and rounder?)
+  *Service images should shrink from edges to center when minimizing
+  screen size
+
+Home
+  *Intro card can become a bit more interesting then justa bunch of text
+
+Footer
+  *Mobile: only phone icon + number
+  *Desktop: Phone number,
+            Address

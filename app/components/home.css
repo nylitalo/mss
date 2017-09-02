@@ -18,28 +18,46 @@
   padding: 16px;
 }
 
-.title {
+.sc-title {
   text-align: center;
   padding: 16px;
   text-decoration: underline;
 }
 
 .home-content {
-  grid-area: home-content;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  .scroll-content {
+    overflow: scroll;
+    width: 100vw;
+    max-height: 400px;
+  }
+
+  .home-content {
+    padding-left: 16px;
+    width: 1150px;
+  }
 }
 
 @media (min-width: 700px) {
   .citat {
   padding: 16px;
   margin-top: 48px;
+  }
 
+  .home-content {
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 }
 
-@media (min-width: 1270px) {
+@media (min-width: 1024px) {
   .home-intro-container {
-    width: 1270px;
+    width: 1024px;
   }
 
 

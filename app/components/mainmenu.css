@@ -1,16 +1,22 @@
 nav {
-  font-size: 12px;
   text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 nav ul {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   list-style-type: none;
 }
 
 nav li {
   display: inline;
-  margin: 6px;
+}
+
+nav li p {
+  font-size: 12px;
 }
 
 nav li a {
@@ -19,24 +25,26 @@ nav li a {
   cursor: pointer;
 }
 
+.md-28 {
+  font-size: 28px;
+}
+
 @media (min-width: 700px) {
-  nav {
-  font-size: 20px;
-  font-weight: bold;
+  .material-icons {
+    display: none;
   }
 
   nav li {
     list-style: none;
     margin: 16px;
   }
-}
-
-@media (min-width: 600px) {
-  nav {
+  nav li p {
+    visibility: visible;
     font-size: 20px;
-    text-align: right;
+    font-weight: bold;
   }
 }
+
 
 .active {
   font-weight: bold;

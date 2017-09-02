@@ -9,12 +9,10 @@ a {
   border: 1px;
   border-color: rgba(0, 0, 0, 0.25);
   border-style: solid;
-  margin: 16px;
   vertical-align: top;
   width: 250px;
   cursor: pointer;
   white-space: normal;
-  text-align: center;
 }
 
 .sc-header {
