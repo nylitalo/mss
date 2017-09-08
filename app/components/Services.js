@@ -1,5 +1,5 @@
 import React from 'react'
-import {ServiceMenu} from './ServiceMenu'
+import ServiceMenu from './ServiceMenu'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {Flyttstadning} from './Services/Flyttstadning'
 import {Hemstadning} from './Services/Hemstadning'

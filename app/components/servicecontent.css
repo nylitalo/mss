@@ -23,10 +23,18 @@
   overflow: hidden;
   text-align: center;
 }
+@media (max-width: 700px) {
+  .service-image-inner {
+    display: inline-block;
+    position: relative;
+    right: -50%;
+  }
 
-.service-image img {
-  display: block;
-  margin: 0 auto;
+  .service-image-inner img {
+    margin: 0 auto;
+    position: relative;
+    left: -50%
+  }
 }
 
 .service-info {
@@ -47,11 +55,22 @@
   padding: 16px;
 }
 
-.booking-button button[type=button] {
-    background-color: var(--accent-color-3);
+.booking-button a {
+  text-decoration: none;
+}
+
+.booking-button button[type=button]  {
+    width: 100%;
+    background-color: var(--accent-color-2);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     padding: 8px 16px 8px 16px;
     font-size: 22px;
+}
+
+@media (min-width: 700px) {
+  .booking-button button[type=button] {
+    width: 50%;
+  }
 }

@@ -19,11 +19,10 @@
 
 Services
   *Mobile first!
+    Drop down created as a first stage, now make it close when clicking
+    elsewhere or on link.
   *Fix css grid and alignment
-  *Redesign 'Boka nu' button
   *Redesign ServicePriceCalculator (Make it a bit smaller and rounder?)
-  *Service images should shrink from edges to center when minimizing
-  screen size
 
 Home
   *Intro card can become a bit more interesting then justa bunch of text

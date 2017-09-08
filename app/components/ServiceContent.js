@@ -1,6 +1,5 @@
 import React from 'react'
 import ServicePriceCalculator from './ServicePriceCalculator'
-import { ServiceMenu } from './ServiceMenu'
 import slug from 'slug'
 import './servicecontent.css'
 import { Link } from 'react-router-dom'
@@ -22,7 +21,9 @@ class ServiceContent extends React.Component {
     return(
       <div className='service-content-container'>
         <div className='service-image'>
-          <img src={'../app/static/images/' + this.props.image} alt={this.props.title} />
+          <div className='service-image-inner'>
+            <img src={'../app/static/images/' + this.props.image} alt={this.props.title} />
+          </div>
         </div>
         <div className='service-title'>
           {this.props.title}
@@ -33,7 +34,11 @@ class ServiceContent extends React.Component {
           </div>
         }
         <div className='service-info'>
-          {this.props.content}
+          {this.props.content.map((cont, val) => (
+            <div key={val}>
+              {cont}
+            </div>
+          ))}
         </div>
         <div className='booking-button'>
           <button type='button'>

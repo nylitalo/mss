@@ -1,6 +1,86 @@
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
 .service-menu {
   font-size: 22px;
   text-align: center;
+	margin:0;
+	padding: 0;
+	background-color: none;
+}
+
+.service-menu ul {
+  display: block;
+  text-align: left;
+  margin: 32px;
+}
+
+.service-menu ul li {
+  display: block;
+  padding: 32px;
+	margin: 0px;
+	}
+
+@media (max-width:768px) {
+  .service-menu {
+  	margin:0;
+  	padding: 0;
+  	background-color: var(--accent-color-4);
+  }
+
+  .service-menu a {
+  	display:block;
+  	padding:14px 20px;
+  	color:#FFF;
+  	font-size:17px;
+  	text-decoration:none;
+  }
+
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+
+  .toggle {
+		display: block;
+		background-color: var(--accent-color-1);
+		padding:14px 20px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+  .service-menu ul {
+    display: none;
+    margin: 0px;
+  }
+
+  .service-menu ul li {
+		display: block;
+		width: 100%;
+    padding: 0px;
+  	margin: 0px;
+		}
+
+    #dropdown-menu-accent-0 {
+      background-color: var(--accent-color-4);
+    }
+    #dropdown-menu-accent-1 {
+      background-color: var(--accent-color-1);
+    }
+}
+
+
+/*
+.service-menu {
   color: #5699D2;
   padding: 16px;
 }
@@ -8,7 +88,6 @@
 .service-link {
   text-align: left;
   width: 200px;
-  background-color: black; /*So i dont forget to fix alignment!*/
   padding: 16px;
   margin: 4px;
 }
@@ -17,3 +96,32 @@
   text-decoration: none;
   color: inherit;
 }
+
+.selected-service  {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .selected-service {
+    width: 100%;
+    background: var(--accent-color-1);
+    position: relative;
+    display: inline-block;
+}
+
+  .dropdown-content {
+    width: 100%;
+    background: var(--accent-color-4);
+    text-align: center;
+  }
+
+  .service-link {
+    text-align: center;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: black;
+    border-style: solid;
+  }
+}
+
+*/
