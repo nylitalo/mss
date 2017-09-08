@@ -4,7 +4,7 @@ import slug from 'slug'
 import './mainmenu.css'
 
 const links = ['Hem', 'Tjänster', 'Om oss', 'Priser', 'Kontakt']
-const icons = ['home', 'room_service', 'help', 'payment', 'email']
+const icons = ['home', 'room_service', 'info', 'payment', 'email']
 
 export const MainMenu = () => (
     <nav>
