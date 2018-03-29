@@ -14,26 +14,32 @@ const services = ['Hemstädning', 'Flyttstädning', 'Kontorsstädning', 'Trappst
 
 class MailForm extends React.Component {
   constructor() {
-    super()
-    this.handleChange = this.handleChange.bind(this)
+    super();
   }
 
   handleChange(event) {
     this.props.dispatch(updateArea(event.target.value))
   }
 
+  handleSubmit(e) {
+      e.preventDefault();
+      console.log("NAME?: ", e.target.name.value);
+
+      emailjs.send("gmail","kontakt_form",{name: e.target.name.value, email : e.target.email.value, area: e.target.area.value, service: e.target.service.value, phone: e.target.phone.value, message: e.target.message.value});
+  }
+
   render() {
     return (
-      <form>
+      <form id="contact-form" role="form" onSubmit={this.handleSubmit.bind(this)}>
         <h1>Kontakta Oss</h1>
-        <label htmlFor='flname'>För och Efternamn: </label>
-        <input id='flname' type='text' name='name' placeholder='För och efternamn' />
-        <label htmlFor='mail'>Mail: </label>
-        <input id='mail' type='mail' name='email' placeholder='ex. john@internet.com' />
+        <label htmlFor='name'>För och Efternamn: </label>
+        <input id='name' type='text' name='name' placeholder='Ex. Anna Andersson' />
+        <label htmlFor='email'>Mail: </label>
+        <input id='email' type='email' name='email' placeholder='ex. anna@mail.com' required />
         <label htmlFor='phone'>Telefonnummer: </label>
-        <input id='phone' type='number' name='phone' placeholder='ex. +4673123456789' />
+        <input id='phone' type='tel' name='phone' placeholder='ex. +4673123456789' />
         <label htmlFor='area'>Area: </label>
-        <input type='number' id='area' value={this.props.area} onChange={this.handleChange}/>
+        <input type='number' id='area' name='area' value={this.props.area} onChange={this.handleChange.bind(this)}/>
         <label htmlFor='services'>Tjänst: </label>
         <select id='services' name='service'>
           {services.map((service) => {
@@ -51,9 +57,10 @@ class MailForm extends React.Component {
             }
           })}
         </select>
-        <label htmlFor='messages'>Meddelande:</label>
-        <textarea id='messages' name='messages' placeholder='Meddelande'></textarea>
-        <input type='submit' value='Skicka' />
+        <label htmlFor='message'>Meddelande:</label>
+        <textarea id='message' name='message' placeholder='Meddelande...' />
+        <input id="submit" name="submit" type="submit" value='Skicka'/>
+
       </form>
     )
   }

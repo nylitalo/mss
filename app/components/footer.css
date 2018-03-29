@@ -1,0 +1,11 @@
+.grid-item-footer {
+  display: inline-block;
+  color: #9ABCD9;
+}
+
+.footer-copy {
+  font-size: 80%;
+  color: #53616d;
+  grid-area: copy;
+  text-align: center;
+}

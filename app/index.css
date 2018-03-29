@@ -26,26 +26,26 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header"
-    "section"
-    "footer";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto 1024px auto;
+  grid-gap: 16px;
 }
 
-header {
-  grid-area: header;
-}
-
-section {
-  grid-area: section;
+.grid-item-header {
+  grid-row-start: 1;
+  grid-column-start: 2;
 }
 
 
-footer {
-  grid-area: footer;
+.grid-item-section {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+
+.grid-item-footer {
   grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-start: 2;
   padding: 16px 0px 16px 0px;
   margin-top: 48px;
   background-color: var(--accent-color-4);

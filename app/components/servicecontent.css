@@ -1,58 +1,61 @@
 .service-content-container {
   display: grid;
-  grid-template-rows: 256px 100px 22px 1fr 50px;
+  grid-template-rows: auto auto auto;
   grid-gap: 16px;
+  max-width: 1024px;
   grid-template-areas:
-    "service-image"
-    "service-calculator"
-    "service-title"
-    "service-info"
-    "booking-button";
+          "service-image"
+          "service-info"
+          "booking-button";
 }
 
-.service-title {
-  grid-area: service-title;
-  font-size: 22px;
-  margin: 16px;
-}
 
 .service-image {
   grid-area: service-image;
-  margin: 16px;
+  margin-bottom: 16px;
+  margin-top: 16px;
   height: 256px;
   overflow: hidden;
   text-align: center;
 }
-@media (max-width: 700px) {
-  .service-image-inner {
+.service-image-inner {
     display: inline-block;
     position: relative;
     right: -50%;
-  }
+}
 
   .service-image-inner img {
     margin: 0 auto;
     position: relative;
     left: -50%
   }
-}
 
 .service-info {
   grid-area: service-info;
   margin: 16px;
   width: auto;
+  height: auto;
 }
 
 .service-calculator {
   grid-area: service-calculator;
+  display: inline-block;
+  height: 100%;
   margin: 16px;
   text-align: center;
 }
 
 .booking-button {
   grid-area: booking-button;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding: 16px;
+  display: inline-block;
+  text-decoration: none;
+  width: 50%;
+  background-color: var(--accent-color-2);
+  border-radius: 4px;
 }
 
 .booking-button a {
@@ -60,17 +63,10 @@
 }
 
 .booking-button button[type=button]  {
-    width: 100%;
-    background-color: var(--accent-color-2);
+    width: 50%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     padding: 8px 16px 8px 16px;
     font-size: 22px;
-}
-
-@media (min-width: 700px) {
-  .booking-button button[type=button] {
-    width: 50%;
-  }
 }

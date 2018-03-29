@@ -2,28 +2,21 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import slug from 'slug'
 import './mainmenu.css'
-
 const links = ['Hem', 'Tjänster', 'Om oss', 'Priser', 'Kontakt']
 const icons = ['home', 'room_service', 'info', 'payment', 'email']
 
 export const MainMenu = () => (
-    <nav>
-      <ul>
-        <li>
+    <nav className="main-menu-grid-item">
+      <ul className="main-menu">
+        <li className="main-menu-item">
           <NavLink exact activeClassName='active' to='/'>
-            <div>
-              <i className="material-icons md-28">{icons[0]}</i>
-              <p>{links[0]}</p>
-            </div>
+            {links[0]}
           </NavLink>
         </li>
         {links.slice(1).map((link, icon) => (
-          <li key={link}>
+          <li key={link} className="main-menu-item">
             <NavLink activeClassName='active' to={'/' + slug(link, {lower: true})}>
-              <div>
-                <i className="material-icons md-28">{icons[icon+1]}</i>
-                <p>{link}</p>
-              </div>
+              {link}
             </NavLink>
           </li>
           )

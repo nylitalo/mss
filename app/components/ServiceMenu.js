@@ -4,7 +4,6 @@ import slug from 'slug'
 import {Flyttstadning} from './Services/Flyttstadning'
 import {Hemstadning} from './Services/Hemstadning'
 import { connect } from 'react-redux'
-import './servicemenu.css'
 
 @connect((store) => {
   return {
@@ -28,10 +27,10 @@ class ServiceMenu extends React.Component {
         const dropdownMenuId = 'dropdown-menu-accent-' + idNum.toString()
         {idNum++}
         return (
-            <li key={val} id={dropdownMenuId}>
-              <Link to={'/tjanster/' + slug(link, {lower: true})}>
+            <li key={val} id={dropdownMenuId} className="main-menu-item">
+              <NavLink activeClassName='active' to={'/tjanster/' + slug(link, {lower: true})}>
                 {link}
-              </Link>
+              </NavLink>
             </li>
         )
       })
@@ -41,34 +40,13 @@ class ServiceMenu extends React.Component {
 
   render() {
     return (
-      <nav className='service-menu'>
-        <label htmlFor='drop' className='toggle'>Tjänster</label>
-        <input type='checkbox' id='drop'/>
-            <ul className='menu'>
+      <nav className='service-menu-grid-item'>
+          <ul className="main-menu">
               {this.generateLinks(this.props.services)}
-            </ul>
+          </ul>
       </nav>
     )
   }
 }
 
 export default ServiceMenu
-
-
-/*
-<nav className='service-menu'>
-  <div className='selected-service'>
-    {this.props.service}
-  </div>
-  <div className='dropdown-content'>
-    {this.props.services.map((link, val) => (
-      <div className='service-link' key={val}>
-        <NavLink activeClassName='active' to={'/tjanster/' + slug(link, {lower: true})}>
-          {link}
-        </NavLink>
-      </div>
-    )
-    )}
-  </div>
-</nav>
-*/

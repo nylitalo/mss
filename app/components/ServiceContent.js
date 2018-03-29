@@ -25,14 +25,6 @@ class ServiceContent extends React.Component {
             <img src={'../app/static/images/' + this.props.image} alt={this.props.title} />
           </div>
         </div>
-        <div className='service-title'>
-          {this.props.title}
-        </div>
-        {this.props.spc == true &&
-          <div className='service-calculator'>
-            <ServicePriceCalculator service={slug(this.props.title, {lower:true})}/>
-          </div>
-        }
         <div className='service-info'>
           {this.props.content.map((cont, val) => (
             <div key={val}>
@@ -40,11 +32,7 @@ class ServiceContent extends React.Component {
             </div>
           ))}
         </div>
-        <div className='booking-button'>
-          <button type='button'>
-            <Link to='/kontakt'>Boka nu</Link>
-          </button>
-        </div>
+          <Link className="booking-button" to='/kontakt'>Boka nu</Link>
       </div>
     )
   }

@@ -1,0 +1,25 @@
+.grid-item-section {
+  display: grid;
+  grid-gap: 16px;
+
+}
+
+.price-service-container {
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr {
+  background-color: #5699D2;
+}
+
+tr:nth-child(even) {
+  background-color: #9ABCD9;
+}

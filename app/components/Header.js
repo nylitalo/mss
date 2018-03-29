@@ -3,7 +3,7 @@ import {MainMenu} from './MainMenu'
 import './header.css'
 
 export const Header = () => (
-  <header>
+  <header className="grid-item-header">
     <div className='header-container'>
       <div className='header-logo'>
         <img src='./app/static/images/marinas_logo.png' alt='Marinas Städservice' />

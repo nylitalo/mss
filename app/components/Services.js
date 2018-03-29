@@ -9,11 +9,9 @@ import {Snoskottning} from './Services/Snoskottning'
 import './services.css'
 
 export const Services = () => (
-  <section>
+  <section className="grid-item-section">
     <div className='service-container'>
-      <div className='service-menu-container'>
-        <ServiceMenu />
-      </div>
+      <ServiceMenu />
       <div className='service-content'>
         <Route path='/tjanster/hemstadning' component={Hemstadning} />
         <Route path='/tjanster/flyttstadning' component={Flyttstadning} />

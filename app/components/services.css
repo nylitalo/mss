@@ -1,26 +1,12 @@
 .service-container {
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-areas:
-    "menu"
-    "service-content";
 }
 
-.service-menu-container {
-  grid-area: menu;
+.service-menu-grid-item {
+  grid-row-start: 1;
 }
 
 .service-content {
-  grid-area: service-content;
-}
-
-
-
-@media (min-width: 700px) {
-  .service-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-      "menu service-content";
-  }
+  grid-row-start: 2;
 }

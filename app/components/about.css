@@ -1,0 +1,27 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 512px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 32px;
+  grid-template-areas:
+    "image faq"
+    "about about"
+}
+
+.faq-container {
+  grid-area: faq;
+  padding: 32px;
+}
+
+.about-us-container {
+  grid-area: about;
+}
+
+.profile-picture {
+  grid-area: image;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+}

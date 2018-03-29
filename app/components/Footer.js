@@ -1,10 +1,10 @@
 import React from 'react'
-import {MainMenu} from './MainMenu'
+import './footer.css'
 
 export const Footer = () => (
-  <footer>
-    <div>
-      Footer
+  <footer className="grid-item-footer">
+    <div className="footer-copy">
+        <span className="icon-text">marinasstadservice.se &copy;</span>
     </div>
   </footer>
 )

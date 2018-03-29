@@ -1,0 +1,11 @@
+{
+  "serviceName" : "Hemstädning",
+  "data" : {
+    "info" : "",
+    "prices" : {
+      "1 - 10" : "99"
+    },
+    "bannerImage" : "",
+    "favorite" : true
+  }
+}

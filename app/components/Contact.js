@@ -27,7 +27,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className="grid-item-section">
         <div className='contact-container'>
           <div className='form-content hvr'>
             <MailForm />
@@ -36,7 +36,13 @@ class Contact extends React.Component {
             <Map initialPosition={{lat: 59.523424, lng: 17.894824}}/>
           </div>
           <div className='contact-info'>
-            <h3>Adress</h3><h3>Telefonnummer</h3>
+            <h3>Adress</h3>
+              <p>Hagvägen 71</p>
+              <p>194 40 Upplands Väsby</p>
+              <h3>Telefonnummer</h3>
+            <p>
+              08-12 34 567
+            </p>
           </div>
         </div>
       </section>
