@@ -1,7 +1,7 @@
 {
-  "serviceName" : "Hemstädning",
-  "data" : {
-    "info" : "",
+  "hemstadning" : {
+    "title" : "Hemstädning",
+    "info" : "Hemstädning är jätte bra! <br/> Detta ska vara på en ny rad!",
     "prices" : {
       "1 - 10" : "99"
     },

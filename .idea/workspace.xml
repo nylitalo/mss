@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8413d26-e897-4c7a-ab9c-5407bb9eed73" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/static/data/serviceData.json" />
-      <change beforePath="$PROJECT_DIR$/app/components/About.js" afterPath="$PROJECT_DIR$/app/components/About.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/Contact.js" afterPath="$PROJECT_DIR$/app/components/Contact.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/Footer.js" afterPath="$PROJECT_DIR$/app/components/Footer.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/Header.js" afterPath="$PROJECT_DIR$/app/components/Header.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/Home.js" afterPath="$PROJECT_DIR$/app/components/Home.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/MailForm.js" afterPath="$PROJECT_DIR$/app/components/MailForm.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/MainMenu.js" afterPath="$PROJECT_DIR$/app/components/MainMenu.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/Prices.js" afterPath="$PROJECT_DIR$/app/components/Prices.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/ServiceCard.js" afterPath="$PROJECT_DIR$/app/components/ServiceCard.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/components/ServiceContent.js" afterPath="$PROJECT_DIR$/app/components/ServiceContent.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/ServiceMenu.js" afterPath="$PROJECT_DIR$/app/components/ServiceMenu.js" />
       <change beforePath="$PROJECT_DIR$/app/components/Services.js" afterPath="$PROJECT_DIR$/app/components/Services.js" />
-      <change beforePath="$PROJECT_DIR$/app/components/contact.css" afterPath="$PROJECT_DIR$/app/components/contact.css" />
-      <change beforePath="$PROJECT_DIR$/app/components/header.css" afterPath="$PROJECT_DIR$/app/components/header.css" />
-      <change beforePath="$PROJECT_DIR$/app/components/home.css" afterPath="$PROJECT_DIR$/app/components/home.css" />
-      <change beforePath="$PROJECT_DIR$/app/components/mainmenu.css" afterPath="$PROJECT_DIR$/app/components/mainmenu.css" />
-      <change beforePath="$PROJECT_DIR$/app/components/servicecard.css" afterPath="$PROJECT_DIR$/app/components/servicecard.css" />
-      <change beforePath="$PROJECT_DIR$/app/components/servicecontent.css" afterPath="$PROJECT_DIR$/app/components/servicecontent.css" />
-      <change beforePath="$PROJECT_DIR$/app/components/services.css" afterPath="$PROJECT_DIR$/app/components/services.css" />
-      <change beforePath="$PROJECT_DIR$/app/index.css" afterPath="$PROJECT_DIR$/app/index.css" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change beforePath="$PROJECT_DIR$/app/index.js" afterPath="$PROJECT_DIR$/app/index.js" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/app/static/data/serviceData.json" afterPath="$PROJECT_DIR$/app/static/data/serviceData.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +31,8 @@
       <file leaf-file-name="serviceData.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/data/serviceData.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -71,11 +51,9 @@
       <file leaf-file-name="Prices.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/Prices.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/app/components/Services.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -92,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceContent.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/ServiceContent.js">
+      <file leaf-file-name="ServiceMenu.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/ServiceMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+            <state relative-caret-position="289">
+              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -105,8 +83,8 @@
       <file leaf-file-name="Hemstadning.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/Services/Hemstadning.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -116,7 +94,19 @@
         <entry file="file://$PROJECT_DIR$/app/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="43" />
+              <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceContent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/ServiceContent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -188,10 +178,11 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/components/MailForm.js" />
-        <option value="$PROJECT_DIR$/app/static/data/serviceData.json" />
         <option value="$PROJECT_DIR$/app/components/Routes.js" />
+        <option value="$PROJECT_DIR$/app/components/Services/Hemstadning.js" />
         <option value="$PROJECT_DIR$/app/index.js" />
         <option value="$PROJECT_DIR$/app/components/Services.js" />
+        <option value="$PROJECT_DIR$/app/static/data/serviceData.json" />
         <option value="$PROJECT_DIR$/app/components/ServiceContent.js" />
       </list>
     </option>
@@ -416,12 +407,12 @@
       <workItem from="1520057268422" duration="35842000" />
       <workItem from="1521113935059" duration="297000" />
       <workItem from="1521114251941" duration="4955000" />
-      <workItem from="1521781458610" duration="8304000" />
+      <workItem from="1521781458610" duration="12159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79273000" />
+    <option name="totallyTimeSpent" value="83128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -542,13 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/ServiceMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -734,32 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/data/serviceData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/data/priceData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/Prices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/Link.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -797,7 +755,41 @@
     <entry file="file://$PROJECT_DIR$/app/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="43" />
+          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/data/priceData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/data/serviceData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Prices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/ServiceContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -806,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/Services/Hemstadning.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -815,17 +807,17 @@
     <entry file="file://$PROJECT_DIR$/app/components/Services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/ServiceContent.js">
+    <entry file="file://$PROJECT_DIR$/app/components/ServiceMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="289">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding />
         </state>
       </provider>

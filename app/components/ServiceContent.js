@@ -5,6 +5,7 @@ import './servicecontent.css'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { updateService } from '../actions/updateServiceAction'
+import serviceData from '../static/data/serviceData.json';
 
 @connect((store) => {
   return {
@@ -13,27 +14,35 @@ import { updateService } from '../actions/updateServiceAction'
 })
 
 class ServiceContent extends React.Component {
-  componentWillMount() {
-    this.props.dispatch(updateService(this.props.title))
-  }
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            title: "",
+            info: "",
+            banner: ""
+        }
+    }
+    componentWillMount() {
+        let service = this.props.match.params.service;
+
+        this.props.dispatch(updateService(service));
+
+        Object.keys(serviceData).map((key, i) => {
+            if(service === key) {
+                console.log("I EXIST, Render me please!");
+            } else {
+                console.log("No service like this: ", service, " please add to json file");
+            }
+        })
+    }
   render () {
-    console.log(this.props);
+      let service = this.props.match.params.service;
+
     return(
-      <div className='service-content-container'>
-        <div className='service-image'>
-          <div className='service-image-inner'>
-            <img src={'../app/static/images/' + this.props.image} alt={this.props.title} />
-          </div>
+        <div>
+            <h1></h1>
         </div>
-        <div className='service-info'>
-          {this.props.content.map((cont, val) => (
-            <div key={val}>
-              {cont}
-            </div>
-          ))}
-        </div>
-          <Link className="booking-button" to='/kontakt'>Boka nu</Link>
-      </div>
     )
   }
 }
