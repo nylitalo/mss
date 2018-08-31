@@ -6,7 +6,7 @@ import Map from './Map'
 import MailForm from './MailForm'
 import './contact.css'
 
-const services = ['Hemstädning', 'Flyttstädning', 'Kontorsstädning', 'Trappstädning', 'Snöskottning']
+const services = ['Hemstädning', 'Flyttstädning', 'Kontorsstädning', 'Storstädning']
 
 @connect((store) => {
   return {

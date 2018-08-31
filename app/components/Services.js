@@ -6,6 +6,7 @@ import {Hemstadning} from './Services/Hemstadning'
 import {Kontorsstadning} from './Services/Kontorsstadning'
 import {Trappstadning} from './Services/Trappstadning'
 import {Snoskottning} from './Services/Snoskottning'
+import {Storstadning} from './Services/Storstädning'
 import './services.css'
 import ServiceContent from "./ServiceContent";
 
@@ -14,8 +15,8 @@ export const Services = () => (
     <div className='service-container'>
       <ServiceMenu />
       <div className='service-content'>
-        <Route exact path='/tjanster/:service' component={ServiceContent} />
         <Route path='/tjanster/hemstadning' component={Hemstadning} />
+        <Route path='/tjanster/storstadning' component={Storstadning} />
         <Route path='/tjanster/flyttstadning' component={Flyttstadning} />
         <Route path='/tjanster/kontorsstadning' component={Kontorsstadning} />
         <Route path='/tjanster/trappstadning' component={Trappstadning} />

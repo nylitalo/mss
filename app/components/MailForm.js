@@ -23,8 +23,6 @@ class MailForm extends React.Component {
 
   handleSubmit(e) {
       e.preventDefault();
-      console.log("NAME?: ", e.target.name.value);
-
       emailjs.send("gmail","kontakt_form",{name: e.target.name.value, email : e.target.email.value, area: e.target.area.value, service: e.target.service.value, phone: e.target.phone.value, message: e.target.message.value});
   }
 

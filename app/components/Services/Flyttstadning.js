@@ -7,7 +7,49 @@ export const Flyttstadning = () => {
       spc={true}
       image='flyttstadning_banner.png'
       title='Flyttstädning'
-      content={["You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.",<br />, <br />,"Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb."]}
+      content={
+          <div>
+              <h3>Följande ingår i ett standardavtal:</h3><br/>
+              <h3>Kök</h3>
+              <ul>
+                <li>Fast belysning</li>
+                <li>Spisfläkt, ventil (ej inuti)</li>
+                <li>Ugn, värmeskåp, plåtarna, galler, spis dras fram (specificera spishäll vid bokning)</li>
+                <li>Kyl och frys (frys ska vara avfrostad när städning påbörjas)</li>
+                <li>Skåp, lådor och luckor (ska vara tömda när städning påbörjas)</li>
+                <li>Arbetsbänkar</li>
+              </ul>
+              <h3>Badrum</h3>
+              <ul>
+                <li>Fast belysning</li>
+                <li>Badrumsskåp (ska vara tömda när städning påbörjas)</li>
+                <li>Bidé</li>
+                <li>Avtorkning av rör</li>
+                <li>Speglar</li>
+                <li>Badkar (front till jacuzzi demonteras och monteras av kunden)</li>
+                <li>Toalett</li>
+                <li>Tvättställ</li>
+                <li>Golvbrunn (ej inuti)</li>
+                <li>Avkalkning och rengöring av kakel och klinkers</li>
+                <li>Ventil</li>
+              </ul>
+              <h3>Fönsterputsning</h3>
+            <ul>
+              <li>4 eller 6 sidor - Fönster ska lätt kunna öppnas för rengöring (insidor, utsidan)</li>
+            </ul>
+              <h3>Alla rum</h3>
+              <ul>
+                <li>Fönsterbänkar</li>
+                <li>Eluttag, strömbrytare, elskåp</li>
+                <li>Väggar och tak dammas</li>
+                <li>Fönsterkarmar</li>
+                <li>Golv och golvlister</li>
+                <li>Garderober (ska vara tömda när städning påbörjas)</li>
+                <li>Trösklar</li>
+                <li>Element (även bakom)</li>
+              </ul>
+          </div>
+      }
     />
   )
 }
