@@ -26,3 +26,22 @@
   width: 100%;
   border-radius: 4px;
 }
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "logo"
+    "menu"
+  }
+  .main-menu-grid-item {
+    margin-left: unset;
+    font-size: 32px;
+  }
+
+  .header-logo {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+}
+

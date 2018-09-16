@@ -7,7 +7,7 @@ class About extends React.Component {
         <section className="grid-item-section">
             <div className="about-grid">
                 <div className="profile-picture">
-                    <img src="/app/static/images/profile_picture.png" />
+                    <img src="./app/static/images/profile_picture.png" />
                 </div>
                 <div className="about-us-container">
                     <h3>Om oss</h3>

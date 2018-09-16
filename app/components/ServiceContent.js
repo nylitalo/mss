@@ -22,7 +22,7 @@ class ServiceContent extends React.Component {
       <div className='service-content-container'>
         <div className='service-image'>
           <div className='service-image-inner'>
-            <img src={'../app/static/images/' + this.props.image} alt={this.props.title} />
+            <img src={'./app/static/images/' + this.props.image} alt={this.props.title} />
           </div>
         </div>
         <div className='service-info'>

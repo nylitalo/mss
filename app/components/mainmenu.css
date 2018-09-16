@@ -19,7 +19,29 @@
   color: #5699D2;
 }
 
+.menu-text {
+  display: inline;
+}
+
+.menu-icons {
+  display: none;
+}
+
 .main-menu-item .active {
   border-bottom: 2px solid #223C52;
 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .menu-text {
+    display: none;
+  }
+
+  .menu-icons {
+    display: inline;
+    text-align: center;
+  }
 }

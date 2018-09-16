@@ -12,6 +12,7 @@
   grid-area: form-content;
   border-radius: 5px;
   padding-right: 16px;
+  padding-left: 16px;
   height: auto;
 }
 
@@ -68,4 +69,18 @@
 
 .contact-info {
   grid-area: contact-info;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .contact-container {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+    "form-content"
+    "location-content"
+    "contact-info"
+  }
+
 }
