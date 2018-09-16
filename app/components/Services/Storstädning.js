@@ -9,29 +9,35 @@ export const Storstadning = () => {
             title='Storstädning'
             content={
                 <div>
-                    Storstäd,
-                    Generellt utför vi följande!
-                    • vädra små mattor (om möjlighet finns)
-                    • dammsugning av golv, mattor och klädda/stoppade möbler
-                    • Moppning av golv
-                    • torka av dörrar, karmar, lister, fönsterbrädor, fria ytor, ytor ovanpå skåp och garderob
-                    • putsa glaspartier i inner- och ytterdörrar samt speglar
-                    • torka av skåpsluckor
-                    • damma av böcker och prydnadssaker i bokhyllor
-                    • damma av tavlor
-                    • damma av möbler och lampor
-                    Kök:
-                    • torkning av köksluckor och köksskåp utvändigt
-                    • rengöring av ugn invändigt
-                    • rengöring av köksfläkt
-                    • rengöring ut- och invändigt av skåp där sopbehållare finns
-                    • rengöring av diskänk, spis och kakel
-                    Badrum/Toalett/Dusch
-                    • rengöring av badkar/dusch och toalett
-                    • torkning av badrumsskåp
-                    • rengöring av kran och handfat
-                    • torkning av väggar
-                    Fönsterputs ingår
+                    <h3>Storstäd</h3>
+                    <h3>Generellt utför vi följande!</h3>
+                    <ul>
+                        <li>vädra små mattor (om möjlighet finns)</li>
+                        <li>dammsugning av golv, mattor och klädda/stoppade möbler</li>
+                        <li>Moppning av golv</li>
+                        <li>torka av dörrar, karmar, lister, fönsterbrädor, fria ytor, ytor ovanpå skåp och garderob</li>
+                        <li>putsa glaspartier i inner- och ytterdörrar samt speglar</li>
+                        <li>torka av skåpsluckor</li>
+                        <li>damma av böcker och prydnadssaker i bokhyllor</li>
+                        <li>damma av tavlor</li>
+                        <li>damma av möbler och lampor</li>
+                    </ul>
+                    <h3>Kök</h3>
+                    <ul>
+                        <li>torkning av köksluckor och köksskåp utvändigt</li>
+                        <li>rengöring av ugn invändigt</li>
+                        <li>rengöring av köksfläkt</li>
+                        <li>rengöring ut- och invändigt av skåp där sopbehållare finns</li>
+                        <li>rengöring av diskänk, spis och kakel</li>
+                    </ul>
+                    <h3>Badrum/Toalett/Dusch</h3>
+                    <ul>
+                        <li>rengöring av badkar/dusch och toalett</li>
+                        <li>torkning av badrumsskåp</li>
+                        <li>rengöring av kran och handfat</li>
+                        <li>torkning av väggar</li>
+                    </ul>
+                    <h3>Fönsterputs ingår</h3>
                 </div>
             }
         />

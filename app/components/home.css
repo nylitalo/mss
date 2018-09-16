@@ -31,4 +31,5 @@
 .home-content {
   grid-column-start: 1;
   grid-row-start: 3;
+  text-align: center;
 }

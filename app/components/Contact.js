@@ -17,7 +17,7 @@ const services = ['Hemstädning', 'Flyttstädning', 'Kontorsstädning', 'Storst�
 
 class Contact extends React.Component {
   constructor() {
-    super()
+    super();
     this.handleChange = this.handleChange.bind(this)
   }
 
@@ -29,7 +29,7 @@ class Contact extends React.Component {
     return (
       <section className="grid-item-section">
         <div className='contact-container'>
-          <div className='form-content hvr'>
+          <div className='form-content'>
             <MailForm />
           </div>
           <div className='location-content'>

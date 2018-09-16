@@ -1,5 +1,5 @@
 export const services = (state={
-  services: ['Hemstädning', 'Flyttstädning', 'Kontorsstädning', 'Trappstädning', 'Snöskottning']},
+  services: ['Hemstädning', 'Flyttstädning', 'Storstädning']},
    action) => {
   switch (action.type) {
     default:

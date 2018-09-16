@@ -18,13 +18,13 @@ class ServiceMenu extends React.Component {
   }
 
   generateLinks(services) {
-    let idNum = 0
+    let idNum = 0;
     return(
       services.map((link, val) => {
         if(idNum == 2) {
           idNum = idNum - 2
         }
-        const dropdownMenuId = 'dropdown-menu-accent-' + idNum.toString()
+        const dropdownMenuId = 'dropdown-menu-accent-' + idNum.toString();
         {idNum++}
         return (
             <li key={val} id={dropdownMenuId} className="main-menu-item">

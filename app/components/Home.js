@@ -20,12 +20,9 @@ export const Home = () => (
           <ServiceCard title='Flyttstädning'
             thumbnail='./app/static/images/sc_flyttstad_256.png'
             text='Låt oss ta hand om erat gamla hem medans ni njuter av det nya.' />
-          <ServiceCard title='Kontorsstädning'
+          <ServiceCard title='Storstädning'
             thumbnail='./app/static/images/sc_kontorstad_256.png'
             text='Vi ordnar kontorsstädning från Stockholm till Uppsala för både små och stora kontor.' />
-          <ServiceCard title='Trappstädning'
-            thumbnail='./app/static/images/sc_trappstad_256.png'
-            text='En ren och fräsch trappuppgång är viktig för hyresgästen. ' />
         </div>
     </div>
   </section>
