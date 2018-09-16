@@ -15,7 +15,8 @@ export const MainMenu = () => (
           </li>
           <li className="main-menu-item menu-icons">
               <NavLink exact activeClassName='active' to='/'>
-                  <i className="material-icons">{icons[0]}</i>
+                  <i className="material-icons icon-align">{icons[0]}</i>
+                  {links[0]}
               </NavLink>
           </li>
         {links.slice(1).map((link, icon) => {
@@ -29,7 +30,8 @@ export const MainMenu = () => (
                     </li>
                     <li key={link+"_"+icon} className="main-menu-item menu-icons">
                     <NavLink activeClassName='active' to={'/' + slug(link, {lower: true})}>
-                    <i className="material-icons">{icons[icon+1]}</i>
+                    <i className="material-icons icon-align">{icons[icon+1]}</i>
+                        {link}
                     </NavLink>
                     </li>
                     </span>

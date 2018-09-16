@@ -44,4 +44,12 @@
     display: inline;
     text-align: center;
   }
+  .icon-align {
+    vertical-align: middle;
+  }
+
+  .main-menu-item .active {
+    border-bottom: unset;
+    color: #223C52;
+  }
 }
